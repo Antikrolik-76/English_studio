@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+    <div class="col-8 mx-1 text">
+      <div class="row mb-3">
+        <div class="col-3"><a href="{% url 'today' %}" class="week">НА СЕГОДНЯ</a></div>
+        <div class="col-3"><a href="{% url 'week' %}" class="week">НА НЕДЕЛЮ</a></div>
+      </div>
+      <div class="row mt-3 pt-3">
+        <table class="table table-borderless list-group-flush font-weight-bolder text-white" style="font-size:14pt">
+          <thead>
+            <tr class="font-weight-bolder text-white border-bottom">
+              <th scope="col"></th>
+              <th scope="col" class="text-center">ВРЕМЯ</th>
+              <th scope="col" class="text-center">ТЕМА</th>
+            </tr>
+          </thead>
+          <tbody><!-- /*class="text-white font-weight-bolder"*/ -->
+            <tr class="podsvetka">
+              <td><a class="table text podsvetka" style="font-size: 16px;" href="#">Группа № 1</a></td>
+              <td class="text-center">12:00 - 13:00</td>
+              <td class="ps-5 text-start"><a class="table text podsvetka" style="font-size: 16px;" href="#">Семья</a></td>
+            </tr>
+            <tr class="podsvetka">
+              <td><a class="table text podsvetka" style="font-size: 16px;" href="#">Группа № 2</a></td>
+              <td class="text-center">13:00 - 14:00</td>
+              <td class="ps-5 text-start"><a class="table text podsvetka" style="font-size: 16px;" href="#">Увлечения/Хобби</a></td>
+            </tr>
+            <tr class="podsvetka">
+              <td><a class="table text podsvetka" style="font-size: 16px;" href="#">Группа № 3</a></td>
+              <td class="text-center">14:00 - 15:00</td>
+              <td class="ps-5 text-start"><a class="table text podsvetka" style="font-size: 16px;" href="#">Работа</a></td>
+            </tr>
+            <tr class="podsvetka">
+              <td><a class="table text podsvetka" style="font-size: 16px;" href="#">Индивидуально</a></td>
+              <td class="text-center">15:00 - 16:00</td>
+              <td class="ps-5 text-start"><a class="table text podsvetka" style="font-size: 16px;" href="#">Англия, Соединенное королевство</a></td>
+            </tr>
+            <tr class="podsvetka">
+              <td><a class="table text podsvetka" style="font-size: 16px;" href="#">Онлайн</a></td>
+              <td class="text-center">16:00 - 17:00</td>
+              <td class="ps-5 text-start"><a class="table podsvetka" style="font-size: 16px;" href="#">Грамматика(Past Simple/Present Progressive)</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+{% endblock%}

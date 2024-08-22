@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content%}
+    <div class="col-8 mx-1 text">
+      <div class="row mb-3">
+        <div class="col-3"><a href="{% url 'today' %}" class="week">НА СЕГОДНЯ</a></div>
+        <div class="col-3"><a href="{% url 'week' %}" class="week">НА НЕДЕЛЮ</a></div>
+      </div>
+      <div class="row mt-3 pt-3">
+        <table class="table table-borderless mytable">
+          <thead>
+            <tr class="font-weight-bolder text-white border-bottom border-right border-white">
+              <th width="10%" class="border-right border-white th-week"></th>
+              <th width="13%" class="text-center th-week">Пн.</th>
+              <th width="13%" class="text-center th-week">Вт.</th>
+              <th width="13%" class="text-center th-week">Ср.</th>
+              <th width="13%" class="text-center th-week">Чт.</th>
+              <th width="13%" class="text-center th-week">Пт.</th>
+              <th width="13%" class="text-center th-week">Сб.</th>
+              <th width="13%" class="text-center th-week">Вс.</th>
+            </tr>
+          </thead>
+          <tbody class="td-week"><!-- /*class="text-white font-weight-bolder"*/ -->
+            <tr class="podsvetka td-week">
+              <td class="border-right th-time pb-0">11:00</td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center color pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center color pb-0"></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 5</a></td>
+              <td class="text-center color pb-0"></td>
+            </tr>
+            <tr class="podsvetka td-week">
+              <td class="border-right-0 border-white podsvetka th-time pb-0">12:00</td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 1</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 2</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 4</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 2</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 4</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 2</a></td>
+              <td class="text-center pb-0"></td>
+            </tr>
+            <tr class="podsvetka">
+              <td class="border-right-0 border-white podsvetka th-time pb-0">13:00</td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 3</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 5</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Инд. № 4</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 5</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka td-week" href="#">Онлайн № 2</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 2</a></td>
+              <td class="text-center pb-0"></td>
+            </tr>
+            <tr class="podsvetka">
+              <td class="border-right-0 border-white th-time pb-0">14:00</td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 4</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Инд. № 2</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 1</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Онлайн № 1</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Инд. № 2</a></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+            </tr>
+            <tr class="podsvetka">
+              <td class="border-right-0 border-white podsvetka th-time pb-0">15:00</td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Инд. № 1</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Онлайн № 2</a></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Инд. № 3</a></td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Гр. № 1</a></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+            </tr>
+            <tr class="podsvetka">
+              <td class="border-time podsvetka th-time pb-0">16:00</td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Инд. № 3</a></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+            </tr>
+            <tr class="podsvetka">
+              <td class="border-right-0 border-white podsvetka th-time pb-0">17:00</td>
+              <td class="text-center pb-0"><a class="table podsvetka" href="#">Онлайн № 1</a></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+              <td class="text-center pb-0"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+{% endblock%}
