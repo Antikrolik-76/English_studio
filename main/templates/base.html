@@ -18,7 +18,7 @@
             <div class="col align-self-center">
               <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="{% url 'today' %}">
+                  <a class="navbar-brand" href="{% url 'main' %}">
                       <div class="row">
                           <div class="col-3">
                               <img src="{% static 'img/logo.jpeg' %}" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
@@ -54,16 +54,11 @@
           <div class="col-2 mx-1">
 
             {% block mainmenu %}
-
                 <div class="list-group w-75">
-
-
                             {% for m in menu %}
-
                                 <a class="pt-2 px-2 text podsvetka" style="font-size:14pt"  href="{% url m.url_name %}">
                                     {{m.title}}
                                 </a>
-
                             {% endfor %}
 
 <!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Ученики</a>-->
@@ -75,12 +70,8 @@
 <!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Отзывы</a>-->
 
                 </div>
-
-
               {% endblock %}
-
           </div>
-
             {% block content%}
 
             {% endblock %}
@@ -88,6 +79,9 @@
           <div class="col">
               <div style="width: 100%; height: 200px; border: solid; text-align: end;"><p>Текущее время</p>>
                   <br><p>и дата</p>></div>
+              {% block button %}
+
+              {% endblock %}
           </div>
         </div>
       </div>

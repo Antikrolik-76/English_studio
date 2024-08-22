@@ -15,15 +15,15 @@ menu=[{'title': 'Расписание', 'url_name': 'schedule'},
 
 
 def main(request):
-    return render(request, 'today.html', {'menu': menu,'title': 'Главная'})
+    return render(request, 'today.html', {'menu': menu, 'title': 'Главная'})
 
 
 def week(request):
-    return render(request, 'week.html', {'menu': menu,'title': 'На неделю'})
+    return render(request, 'week.html', {'menu': menu, 'title': 'На нbделю'})
 
 
 def today(request):
-    return render(request, 'today.html', {'menu': menu,'title': 'На сегодня'})
+    return render(request, 'today.html', {'menu': menu, 'title': 'На сегодня'})
 
 
 def schedule(request: HttpResponse):
