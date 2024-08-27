@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e903dc50-7d58-4234-9a59-b13a0e447e49" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/students/students.py" beforeDir="false" afterPath="$PROJECT_DIR$/students/students.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +36,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Builder_Prototype_Phone.executor": "Run",
+    "Python.students.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/english_studio"
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "C:/python/Домашние задания/pythonProject_OOP_Class/Builder_Prototype_Phone.py"
   }
 }]]></component>
   <component name="SharedIndexes">
