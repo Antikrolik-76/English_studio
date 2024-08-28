@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Student:
 
     def __init__(self):
@@ -17,8 +18,8 @@ class Student:
                 f'Отчество: {self.surname_2}\n'
                 f'Возраст: {self.age}')
 
-class Builder(ABC):
 
+class Builder(ABC):
 
     @abstractmethod
     def create(self):
@@ -88,6 +89,7 @@ class StudentBuilder(Builder):
     def get_student(self):
         return self.student
 
+
 class StudentCreator:
 
     def __init__(self, builder: Builder) -> None:
@@ -98,13 +100,13 @@ class StudentCreator:
 
     def make(self, student: tuple) -> Student:
         self._builder.create()
-        self._builder.set_surname(student[0])
-        self._builder.set_name(student[1])
-        self._builder.set_surname_2(student[2])
-        self._builder.set_age(student[3])
-        self._builder.set_group(student[4])
-        self._builder.set_avg_ball(student[5])
-        self._builder.set_note(student[6])
+        self._builder.set_surname(student[1])
+        self._builder.set_name(student[2])
+        self._builder.set_surname_2(student[3])
+        self._builder.set_age(student[4])
+        self._builder.set_group(student[5])
+        self._builder.set_avg_ball(student[6])
+        self._builder.set_note(student[7])
         return self._builder.get_student()
 
 
@@ -126,6 +128,3 @@ class StudentsContainer:
 
     def get_list_students(self):
         return self.students
-
-
-

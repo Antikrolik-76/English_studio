@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+          <div class="col-8 mx-1">
+            <div class="row mb-2">
+              <h2>Ученики студии "БукиЛэнд"</h2>            
+            </div>
+            <div class="row mt-2 pt-1">
+              <table class="table table-borderless">
+                <thead>
+                  <tr class="font-weight-bolder text-white border-bottom">
+                    <th width="3%"></th>
+                    <th width="52%" class="text-start">Фамилия И.О.</th>
+                    <th width="3%" class="text-center">Возраст</th>
+                    <th width="7%" class="text-center">Группа</th>
+                    <th width="15%" class="text-center">Ср. балл</th>
+                    <th width="20%" class="text-center">Примечание</th>
+                  </tr>
+                </thead>
+                <tbody><!-- /*class="text-white font-weight-bolder"*/ -->
+                  {% for student in data %}
+                    <tr class="podsvetka">
+                      <td width="5%" class="pb-0">1.</td>
+                      <td class="pb-0" style="text-align: left;">{{ student.surname }}</td>
+                      <td class="text-center pb-0">{{ student.age }}</td>
+                      <td class="text-center color pb-0">{{ student.group }}</td>
+                      <td class="text-center pb-0">{{ student.avg_ball }}</td>
+                      <td class="text-center color pb-0">{{ student.note }}</td>
+                    </tr>
+                  {% endfor %}
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">2.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Смирнов Василий Петрович</td>-->
+<!--                    <td class="text-center pb-0">10 лет</td>-->
+<!--                    <td class="text-center pb-0">2</td>-->
+<!--                    <td class="text-center pb-0">3,9</td>-->
+<!--                    <td class="text-center pb-0"></td>  -->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">3.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Петров Игнатий Андреевич</td>-->
+<!--                    <td class="text-center pb-0">12 лет</td>-->
+<!--                    <td class="text-center pb-0">2</td>-->
+<!--                    <td class="text-center pb-0">4,2</td>-->
+<!--                    <td class="text-center pb-0"></td>  -->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">4.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Сидорова Анна Николаевна</td>-->
+<!--                    <td class="text-center pb-0">8 лет</td>-->
+<!--                    <td class="text-center pb-0">1</td>-->
+<!--                    <td class="text-center pb-0">4,7</td>-->
+<!--                    <td class="text-center pb-0"></td> -->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">5.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Семенова Ирина Валерьевна</td>-->
+<!--                    <td class="text-center pb-0">7 лет</td>-->
+<!--                    <td class="text-center pb-0">1</td>-->
+<!--                    <td class="text-center pb-0">4,8</td>-->
+<!--                    <td class="text-center pb-0"></td> -->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">6.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Малышев Александр Иванович</td>-->
+<!--                    <td class="text-center pb-0">7 лет</td>-->
+<!--                    <td class="text-center pb-0">1</td>-->
+<!--                    <td class="text-center pb-0">4,9</td>-->
+<!--                    <td class="text-center pb-0"></td>-->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">7.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Игнатьев Семен Борисович</td>-->
+<!--                    <td class="text-center pb-0">13 лет</td>-->
+<!--                    <td class="text-center pb-0">3</td>-->
+<!--                    <td class="text-center pb-0">4,7</td>-->
+<!--                    <td class="text-center pb-0"></td>-->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">8.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Свиридова Валентина Игоревна</td>-->
+<!--                    <td class="text-center pb-0">14 лет</td>-->
+<!--                    <td class="text-center pb-0">3</td>-->
+<!--                    <td class="text-center pb-0">4,4</td>-->
+<!--                    <td class="text-center pb-0"></td>-->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">9.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Темнов Иван Васильевич</td>-->
+<!--                    <td class="text-center pb-0">13 лет</td>-->
+<!--                    <td class="text-center pb-0">3</td>-->
+<!--                    <td class="text-center pb-0">4,6</td>-->
+<!--                    <td class="text-center pb-0"></td>-->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka text-right">-->
+<!--                    <td width="5%" class="pb-0">10.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Измайлов Владимир Андреевич</td>-->
+<!--                    <td class="text-center pb-0">15 лет</td>-->
+<!--                    <td class="text-center pb-0">Инд.</td>-->
+<!--                    <td class="text-center pb-0">4,8</td>-->
+<!--                    <td class="text-center pb-0"></td>-->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="10%" class="pb-0">11.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Васильев Алексей Валерьевич</td>-->
+<!--                    <td class="text-center pb-0">14 лет</td>-->
+<!--                    <td class="text-center pb-0">3</td>-->
+<!--                    <td class="text-center pb-0">4,9</td>-->
+<!--                    <td class="text-center pb-0"></td>-->
+<!--                  </tr>-->
+<!--                  <tr class="podsvetka">-->
+<!--                    <td width="5%" class="pb-0">12.</td>-->
+<!--                    <td class="pb-0" style="text-align: left;">Петров Артем Андреевич</td>-->
+<!--                    <td class="text-center pb-0">8 лет</td>-->
+<!--                    <td class="text-center pb-0">1</td>-->
+<!--                    <td class="text-center pb-0">4,3</td>-->
+<!--                    <td class="text-center pb-0"></td>-->
+<!--                  </tr>-->
+                </tbody>
+              </table>
+            </div> 
+          </div>
+
+{% endblock %}
+
+{% block button %}
+      <div class="row pt-5">
+                <button type="button" class="btn podsvetka btn-white text py-2 my-2">+Добавить</button>
+                <button type="button" class="btn podsvetka btn-white text py-2 my-2">-Удалить</button>
+                <button type="button" class="btn podsvetka btn-white text py-2 my-2">Изменить</button>
+      </div>
+{% endblock %}

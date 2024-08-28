@@ -32,7 +32,7 @@ def schedule(request: HttpResponse):
 
 
 def students(request: HttpResponse):
-    return render(request, 'students.html', {'menu': menu, 'title': 'Ученики'})
+    return render(request, 'students_1.html', {'menu': menu, 'title': 'Ученики'})
 
 
 def groups(request: HttpResponse):
