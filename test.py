@@ -37,5 +37,4 @@ data = container.get_list_students()
 # print(data)
 # count = len(data) if data is not None else 0
 cursor.close()
-for pupil in data:
-    print(pupil.surname)
+print(data)
