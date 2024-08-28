@@ -13,7 +13,6 @@ menu=[{'title': 'Расписание', 'url_name': 'schedule'},
       {'title': 'Отзывы', 'url_name': 'reviews'},
 ]
 
-
 def main(request):
     return render(request, 'today.html', {'menu': menu, 'title': 'Главная'})
 

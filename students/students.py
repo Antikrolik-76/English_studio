@@ -12,11 +12,11 @@ class Student:
         self.avg_ball = None
         self.note = None
 
-    def __str__(self):
-        return (f'Фамилия: {self.surname}\n'
-                f'Имя: {self.name}\n'
-                f'Отчество: {self.surname_2}\n'
-                f'Возраст: {self.age}')
+    # def __str__(self):
+    #     return (f'Фамилия: {self.surname}\n'
+    #             f'Имя: {self.name}\n'
+    #             f'Отчество: {self.surname_2}\n'
+    #             f'Возраст: {self.age}')
 
 
 class Builder(ABC):

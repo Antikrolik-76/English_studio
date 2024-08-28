@@ -52,7 +52,7 @@ class PGStudentManager(DBManager):
 
                 params = (student.surname, student.name, )
                 query = """SELECT * 
-                           FROM students
+                           FROM pupils
                            WHERE surname = %s AND
                                  name = %s"""
                 cursor.execute(query, params)

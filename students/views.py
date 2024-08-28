@@ -16,7 +16,7 @@ def students(request: HttpRequest):
                                     password='admin')
 
     cursor = connect.cursor()
-    query = """ SELECT * FROM students """
+    query = """ SELECT * FROM pupils """
     cursor.execute(query)
     container = StudentsContainer()
     container.create_list_student(cursor.fetchall())
@@ -32,7 +32,7 @@ def students(request: HttpRequest):
     # cursor.close()
 
     context = {
-        "data": data[1],
+        "data": data,
         # "name": data[1],
         # "surname_2": data[2],
         # "age": data[3],
