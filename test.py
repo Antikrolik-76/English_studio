@@ -38,3 +38,16 @@ data = container.get_list_students()
 # count = len(data) if data is not None else 0
 cursor.close()
 print(data[1].surname)
+
+# class DBConnect:
+#
+#     _instance = None
+#
+#     @classmethod
+#     def get_connect(cls, *args, **kwargs):
+#         if cls._instance is None:
+#             cls._instance = psycopg2.connect(*args, **kwargs)
+#         return cls._instance
+
+
+#{% url m.url_name %} {{m.title}} {% for m in menu %}-->

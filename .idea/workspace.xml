@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e903dc50-7d58-4234-9a59-b13a0e447e49" name="Changes" comment="" />
+    <list default="true" id="e903dc50-7d58-4234-9a59-b13a0e447e49" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/about/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gallery/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviews/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schedule/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/topic/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/students/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/students/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/students/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/students/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +60,12 @@
     &quot;last_opened_file_path&quot;: &quot;C:/python/Домашние задания/pythonProject_OOP_Class/Builder_Prototype_Phone.py&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\english_studio" />
+      <recent name="C:\Users\User\PycharmProjects\english_studio\students" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,5 +94,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/students/urls.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/schedule/views.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

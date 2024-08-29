@@ -1,3 +1,4 @@
+import psycopg2
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
 from main.views import *
@@ -9,15 +10,16 @@ from students.database import DBConnect, PGStudentManager
 
 
 def students(request: HttpRequest):
-    connect = DBConnect.get_connect(dbname='studio',
-                                    host='localhost',
-                                    port=5432,
-                                    user='postgres',
-                                    password='admin')
+    connect = DBConnect.get_connect(dbname='students',
+                               host='localhost',
+                               port=5432,
+                               user='postgres',
+                               password='admin')
 
     cursor = connect.cursor()
     query = """ SELECT * FROM students """
     cursor.execute(query)
+    # cursor.fetchall()
     container = StudentsContainer()
     container.create_list_student(cursor.fetchall())
     data = container.get_list_students()
@@ -32,7 +34,9 @@ def students(request: HttpRequest):
     # cursor.close()
 
     context = {
-        "data": data[1],
+        "data": data,
+        "menu": menu,
+        "title": 'Ученики'
         # "name": data[1],
         # "surname_2": data[2],
         # "age": data[3],
