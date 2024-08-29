@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e903dc50-7d58-4234-9a59-b13a0e447e49" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main/static/style_2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/today.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/today.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/week.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/week.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/students/db/pupils.sql" beforeDir="false" afterPath="$PROJECT_DIR$/students/db/pupils.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/students/templates/students_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/students/templates/students_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/students/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/students/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/.gitignore" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -51,7 +55,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/python/Домашние задания/pythonProject_OOP_Class/Builder_Prototype_Phone.py&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/python/Домашние задания/pythonProject_OOP_Class/Builder_Prototype_Phone.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="SharedIndexes">

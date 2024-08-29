@@ -1,10 +1,10 @@
---CREATE DATABASE studio
-  -- WITH
-  -- OWNER = postgres
-  -- ENCODING = 'UTF8'
-  -- LOCALE_PROVIDER = 'libc'
-  -- CONNECTION LIMIT = -1
-  -- IS_TEMPLATE = False;
+CREATE DATABASE studio
+   WITH
+   OWNER = postgres
+   ENCODING = 'UTF8'
+   LOCALE_PROVIDER = 'libc'
+   CONNECTION LIMIT = -1
+   IS_TEMPLATE = False;
    
 DROP TABLE IF EXISTS pupils;
 
@@ -24,4 +24,7 @@ VALUES
 ('Петрова', 'Мария', 'Александровна', 12, 'Гр. № 1', 4.7, ''),
 ('Иванова', 'Нина', 'Николаевна', 8, 'Гр. № 2', 4.5, ''),
 ('Сидоров', 'Денис', 'Валерьевич', 9, 'Гр. № 2', 4.3, ''),
-('Семенов', 'Данил', 'Сергеевич', 11, 'Гр. № 1', 4.8, '');
+('Семенов', 'Данил', 'Сергеевич', 11, 'Гр. № 1', 4.8, ''),
+('КОзлов', 'Сергей', 'Сергеевич', 11, 'Гр. № 1', 4.8, ''),
+('КОзлов', 'Сергей', 'Сергеевич', 11, 'Гр. № 1', 4.8, '');
+

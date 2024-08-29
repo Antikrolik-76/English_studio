@@ -1,5 +1,5 @@
-<!--{% extends "base.html" %}-->
-<!--{% load static %}-->
+{% extends "base.html" %}
+{% load static %}
 {% block content%}
 
           <div class="col-8 mx-1">
@@ -22,11 +22,11 @@
                   {% for pupil in data %}
                       <tr class="podsvetka">
                         <td width="5%" class="pb-0">1.</td>
-                        <td class="pb-0" style="text-align: left;">{{ pupil.surname }}</td>
-                        <td class="text-center pb-0">{{ pupil.age }}</td>
-                        <td class="text-center color pb-0">{{ pupil.group }}</td>
-                        <td class="text-center pb-0">{{ pupil.avg_ball }}</td>
-                        <td class="text-center color pb-0">{{ pupil.note }}</td>
+                        <td class="pb-0" style="text-align: left;">{{pupil.surname}}</td>
+                        <td class="text-center pb-0">{{pupil.age}}</td>
+                        <td class="text-center color pb-0">{{pupil.group}}</td>
+                        <td class="text-center pb-0">{{pupil.avg_ball}}</td>
+                        <td class="text-center color pb-0">{{pupil.note}}</td>
                       </tr>
                   {% endfor %}
 <!--                  <tr class="podsvetka">-->
