@@ -11,67 +11,82 @@
     <link href="{% static 'style_2.CSS' %}" rel="stylesheet">
     <title>{{ title }}</title>
   </head>
-<body>
-  <div class="container-fluid bg-transparent">
-      <div class="container text-bg-light mw-100 text">
-          <div class="row justify-content-end">
-            <div class="col align-self-center">
-              <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="{% url 'main' %}">
-                      <div class="row">
-                          <div class="col-3">
-                              <img src="{% static 'img/logo.jpeg' %}" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
-                          </div>
-                          <div class="col-9">
-                              <div class=div class="p-2 bd-highlight">
-                                  БукиЛэнд
+    <body>
+      <div class="container-fluid bg-transparent">
+          <div class="container text-bg-light mw-100 text">
+              <div class="row justify-content-end">
+                <div class="col align-self-center">
+                  <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="{% url 'main' %}">
+                          <div class="row">
+                              <div class="col-3">
+                                  <img src="{% static 'img/logo.jpeg' %}" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
                               </div>
-                              <div class=div class="p-2 bd-highlight">
-                                  Студия Английского языка
+                              <div class="col-9">
+                                  <div class=div class="p-2 bd-highlight">
+                                      БукиЛэнд
+                                  </div>
+                                  <div class=div class="p-2 bd-highlight">
+                                      Студия Английского языка
+                                  </div>
                               </div>
-                          </div>
-                       </div>
-                  </a>
+                           </div>
+                      </a>
+                    </div>
+                  </nav>
                 </div>
-              </nav>
-            </div>
-            <div class="col">
-              <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid d-flex justify-content-end">
-                  <a class="navbar-brand" href="#">
-                    <img src="{% static 'img/icons8-пользователь-64.png' %}" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-                    Мой профиль
-                  </a>
+                <div class="col">
+                  <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid d-flex justify-content-end">
+                      <a class="navbar-brand" href="#">
+                        <img src="{% static 'img/icons8-пользователь-64.png' %}" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                        Мой профиль
+                      </a>
+                    </div>
+                  </nav>
                 </div>
-              </nav>
+              </div>
+          </div>
+          <br>
+          <div class="container-fluid">
+            <div class="row mw-100 mx-1">
+              <div class="col-2 mx-1">
+
+                {% block mainmenu %}
+                    <div class="list-group w-75">
+                        {% for m in menu%}
+                            <a class="pt-2 px-2 text podsvetka" style="font-size:14pt"
+                               href="{% url m.url_name %}">{{m.title}}</a>
+
+                        {% endfor %}
+
+                    </div>
+                  {% endblock %}
+              </div>
+                {% block content%}
+
+                {% endblock %}
+
+              <div class="col">
+                  <div style="width: 100%; height: 200px; border: solid; text-align: end;"><p>Текущее время</p>>
+                      <br><p>и дата</p>></div>
+                  {% block button %}
+
+                  {% endblock %}
+              </div>
             </div>
           </div>
-      </div>
-      <br>
-      <div class="container-fluid">
-        <div class="row mw-100 mx-1">
-          <div class="col-2 mx-1">
-
-            {% block mainmenu %}
-                <div class="list-group w-75">
-                            {% for m in menu %}
-                                <a class="pt-2 px-2 text podsvetka" style="font-size:14pt"  href="{% url m.url_name %}">
-                                    {{m.title}}
-                                </a>
-                            {% endfor %}
-
-<!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Ученики</a>-->
-<!--                  <a href="http://127.0.0.1:8000/groups/" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Группы</a>-->
-<!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Темы</a>-->
-<!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt;">Оплата</a>-->
-<!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Галлерея</a>-->
-<!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">О студии</a>-->
-<!--                  <a href="#" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Отзывы</a>-->
-
-                </div>
-              {% endblock %}
+          <br>
+          <div class="d-flex mt-2 pt-2 justify-content-end text">
+            <div class="p-2 bd-highlight">
+              <img src="{% static 'img/icons8-vk-48.png' %}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            </div>
+            <div class="p-2 bd-highlight align-items-center my-auto">
+              <a class="navbar-brand" href="#">Контакты</a>
+            </div>
           </div>
+<<<<<<< HEAD
             {% block content%}
 
             {% endblock %}
@@ -95,5 +110,7 @@
         </div>
       </div>
 
+=======
+>>>>>>> develop
     </body>
 </html>

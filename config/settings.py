@@ -41,6 +41,13 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'groups.apps.GroupsConfig',
     'students.apps.StudentsConfig',
+    'topic.apps.TopicConfig',
+    'payment.apps.PaymentConfig',
+    'gallery.apps.GalleryConfig',
+    'about.apps.AboutConfig',
+    'reviews.apps.ReviewsConfig',
+    'schedule.apps.ScheduleConfig',
+
 ]
 
 MIDDLEWARE = [

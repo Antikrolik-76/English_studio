@@ -1,9 +1,6 @@
-
 from django.shortcuts import render
-from django.http import HttpResponse
 
-
-menu=[{'title': 'Расписание', 'url_name': 'schedule'},
+menu = [{'title': 'Расписание', 'url_name': 'schedule'},
       {'title': 'Ученики', 'url_name': 'students'},
       {'title': 'Группы', 'url_name': 'groups'},
       {'title': 'Темы', 'url_name': 'topic'},
@@ -18,11 +15,12 @@ def main(request):
 
 
 def week(request):
-    return render(request, 'week.html', {'menu': menu, 'title': 'На нbделю'})
+    return render(request, 'week.html', {'menu': menu, 'title': 'На неделю'})
 
 
 def today(request):
     return render(request, 'today.html', {'menu': menu, 'title': 'На сегодня'})
+<<<<<<< HEAD
 
 
 def schedule(request: HttpResponse):
@@ -61,3 +59,5 @@ def about(request: HttpResponse):
 def reviews(request: HttpResponse):
     return HttpResponse(f'<h2>Отзывы</h2>'
                         f'<a href=http://127.0.0.1:8000/>На главную </a>')
+=======
+>>>>>>> develop

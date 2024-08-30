@@ -3,7 +3,6 @@ from .views import *
 
 
 urlpatterns = [
-
-    path('', groups, name='groups'),
+     path('', groups, name='groups'),
 
 ]
