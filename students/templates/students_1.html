@@ -19,16 +19,17 @@
                   </tr>
                 </thead>
                 <tbody><!-- /*class="text-white font-weight-bolder"*/ -->
-                  {% for student in data %}
-                    <tr class="podsvetka">
-                      <td width="5%" class="pb-0">1.</td>
-                      <td class="pb-0" style="text-align: left;">{{ student.surname }}</td>
-                      <td class="text-center pb-0">{{ student.age }}</td>
-                      <td class="text-center color pb-0">{{ student.group }}</td>
-                      <td class="text-center pb-0">{{ student.avg_ball }}</td>
-                      <td class="text-center color pb-0">{{ student.note }}</td>
+                    {% for student in data %}
+                        <tr class="podsvetka">
+                            <td width="5%" class="pb-0"> </td>
+                            <td class="pb-0" style="text-align: left;">{{ student.surname }}  {{ student.name }}  {{ student.surname_2}}</td>
+                            <td class="text-center pb-0">{{ student.age }}</td>
+                            <td class="text-center color pb-0">{{ student.group }}</td>
+                            <td class="text-center pb-0">{{ student.avg_ball }}</td>
+                            <td class="text-center color pb-0">{{ student.note }}</td>
                     </tr>
-                  {% endfor %}
+                    {% endfor %}
+
 <!--                  <tr class="podsvetka">-->
 <!--                    <td width="5%" class="pb-0">2.</td>-->
 <!--                    <td class="pb-0" style="text-align: left;">Смирнов Василий Петрович</td>-->

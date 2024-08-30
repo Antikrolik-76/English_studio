@@ -23,5 +23,5 @@ urlpatterns = [
     path('gallery/', gallery, name='gallery'),
     path('about/', about, name='about'),
     path('reviews/', reviews, name='reviews'),
-    # re_path(r'^\w', main),
+
 ]

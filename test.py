@@ -21,23 +21,37 @@ from students.students import Student, StudentBuilder, StudentsContainer
 from students.database import DBConnect, PGStudentManager
 
 
-connect = psycopg2.connect(dbname='students',
-                                    host='localhost',
-                                    port=5432,
-                                    user='postgres',
-                                    password='admin')
+# connect = psycopg2.connect(dbname='students',
+#                                     host='localhost',
+#                                     port=5432,
+#                                     user='postgres',
+#                                     password='admin')
+#
+# cursor = connect.cursor()
+# query = """ SELECT * FROM students """
+# cursor.execute(query)
+# # cursor.fetchall()
+# container = StudentsContainer()
+# container.create_list_student(cursor.fetchall())
+# data = container.get_list_students()
+# # print(data)
+# # count = len(data) if data is not None else 0
+# cursor.close()
+# a = [3, 4, 5, 6]
+# for b in a:
+# # print(data[1].surname)
+#     print(a.index(b))
 
-cursor = connect.cursor()
-query = """ SELECT * FROM students """
-cursor.execute(query)
-# cursor.fetchall()
-container = StudentsContainer()
-container.create_list_student(cursor.fetchall())
-data = container.get_list_students()
-# print(data)
-# count = len(data) if data is not None else 0
-cursor.close()
-print(data[1].surname)
+
+
+
+# num = [1, 2, 3, 4, 5]
+# info = zip(num, data)
+# for i in info:
+# for pupil in data:
+#     num.append(data.index(pupil)+1)
+    print(i)
+
 
 # class DBConnect:
 #

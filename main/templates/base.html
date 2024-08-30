@@ -56,16 +56,9 @@
                 {% block mainmenu %}
                     <div class="list-group w-75">
                         {% for m in menu%}
-                            <a class="pt-2 px-2 text podsvetka" style="font-size:14pt"  href="{% url m.url_name %}">{{m.title}}</a>
+                            <a class="pt-2 px-2 text podsvetka" style="font-size:14pt"
+                               href="{% url m.url_name %}">{{m.title}}</a>
 
-
-<!--                      <a href="{% url 'students' %}" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Ученики</a>-->
-<!--                      <a href="{% url 'groups' %}" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Группы</a>-->
-<!--                      <a href="{% url 'topic' %}" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Темы</a>-->
-<!--                      <a href="payment" class="# pt-2 px-2 text podsvetka" style="font-size:14pt;">Оплата</a>-->
-<!--                      <a href="gallery" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Галлерея</a>-->
-<!--                      <a href="about" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">О студии</a>-->
-<!--                      <a href="reviews" class="# pt-2 px-2 text podsvetka" style="font-size:14pt">Отзывы</a>-->
                         {% endfor %}
 
                     </div>
