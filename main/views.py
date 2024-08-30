@@ -20,44 +20,4 @@ def week(request):
 
 def today(request):
     return render(request, 'today.html', {'menu': menu, 'title': 'На сегодня'})
-<<<<<<< HEAD
 
-
-def schedule(request: HttpResponse):
-    return HttpResponse( f'<h2>Расписание</h2>'
-                        f'<a href=http://127.0.0.1:8000/>На главную </a>')
-
-
-def students(request: HttpResponse):
-    return render(request, 'students_1.html', {'menu': menu, 'title': 'Ученики'})
-
-
-def groups(request: HttpResponse):
-    return render(request, 'groups.html', {'menu': menu, 'title': 'Группы'})
-
-
-def topic(request: HttpResponse):
-    return HttpResponse(f'<h2>Темы</h2>'
-                        f'<a href=http://127.0.0.1:8000/>На главную </a>')
-
-
-def payment(request: HttpResponse):
-    return HttpResponse(f'<h2>Оплата</h2>'
-                        f'<a href=http://127.0.0.1:8000/>На главную </a>')
-
-
-def gallery(request: HttpResponse):
-    return HttpResponse(f'<h2>Галлерея</h2>'
-                        f'<a href=http://127.0.0.1:8000/>На главную </a>')
-
-
-def about(request: HttpResponse):
-    return HttpResponse(f'<h2>О студии</h2>'
-                        f'<a href=http://127.0.0.1:8000/>На главную </a>')
-
-
-def reviews(request: HttpResponse):
-    return HttpResponse(f'<h2>Отзывы</h2>'
-                        f'<a href=http://127.0.0.1:8000/>На главную </a>')
-=======
->>>>>>> develop
